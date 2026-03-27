@@ -1,0 +1,30 @@
+{
+  "name": "@bitcoinbay/open-meetup-bot",
+  "version": "0.0.1",
+  "description": "Open Meetup Bot CLI — manage content, events, and media",
+  "type": "module",
+  "bin": {
+    "open-meetup-bot": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "SKILL.md"
+  ],
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "keywords": [
+    "bitcoin",
+    "bitcoin-bay",
+    "cli",
+    "cms"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bennyhodl/bitcoin-bay-skill"
+  }
+}
