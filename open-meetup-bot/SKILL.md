@@ -17,7 +17,7 @@ The CLI is published on npm as `@bitcoinbay/open-meetup-bot` and runs directly v
 
 ### Prerequisites
 
-1. The `BITCOIN_BAY_AGENT_KEY` environment variable must be set. If it's missing, the CLI will tell you. `BITCOIN_BAY_URL` defaults to `https://bitcoinbay.foundation` — override it for local development.
+1. The `OPEN_MEETUP_AGENT_KEY` environment variable must be set. If it's missing, the CLI will tell you. `OPEN_MEETUP_URL` defaults to `https://bitcoinbay.foundation` — override it for local development.
 2. `sharp` is bundled for image optimization. Images are automatically resized (max 2400px), converted to WebP, and stripped of EXIF metadata before upload.
 
 ## Commands

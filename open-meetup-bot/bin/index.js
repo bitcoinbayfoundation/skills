@@ -3,11 +3,11 @@
 import { readFileSync, writeFileSync, unlinkSync } from "node:fs";
 import { basename } from "node:path";
 
-const API_KEY = process.env.BITCOIN_BAY_AGENT_KEY;
-const BASE_URL = process.env.BITCOIN_BAY_URL || "https://www.bitcoinbay.foundation";
+const API_KEY = process.env.OPEN_MEETUP_AGENT_KEY;
+const BASE_URL = process.env.OPEN_MEETUP_URL || "https://www.bitcoinbay.foundation";
 
 if (!API_KEY) {
-  console.error("Error: BITCOIN_BAY_AGENT_KEY env variable is not set");
+  console.error("Error: OPEN_MEETUP_AGENT_KEY env variable is not set");
   process.exit(1);
 }
 
@@ -389,14 +389,14 @@ const commands = {
 const [command, ...rest] = process.argv.slice(2);
 
 if (!command || command === "help" || command === "--help") {
-  console.log("Bitcoin Bay Agent CLI\n");
+  console.log("Open Meetup Bot CLI\n");
   console.log("Usage: open-meetup-bot <command> [flags]\n");
   console.log("Commands:");
   for (const [name, cmd] of Object.entries(commands)) {
     console.log(`  ${name.padEnd(20)} ${cmd.desc}`);
   }
   console.log(`\nRun 'open-meetup-bot <command> --help' for flag details.`);
-  console.log(`\nEnv: BITCOIN_BAY_AGENT_KEY (required), BITCOIN_BAY_URL (default: ${BASE_URL})`);
+  console.log(`\nEnv: OPEN_MEETUP_AGENT_KEY (required), OPEN_MEETUP_URL (default: ${BASE_URL})`);
   process.exit(0);
 }
 
