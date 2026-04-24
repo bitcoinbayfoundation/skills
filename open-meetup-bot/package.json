@@ -1,6 +1,6 @@
 {
   "name": "@bitcoinbay/open-meetup-bot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Open Meetup Bot CLI — manage content, events, and media",
   "type": "module",
   "bin": {
